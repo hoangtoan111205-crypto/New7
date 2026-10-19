@@ -1,0 +1,74 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    margin-bottom: 8px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.left-column {
+    width: 60%;
+    float: left;
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.right-column {
+    width: 38%;
+    float: right;
+    background-color: lightgreen;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Xử lý float để container bao được hai cột */
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.left-column h2,
+.right-column h2 {
+    margin-bottom: 12px;
+}
+
+.left-column p {
+    margin-bottom: 12px;
+}
+
+.right-column ul {
+    padding-left: 20px;
+}
+
+.footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 25px;
+}
